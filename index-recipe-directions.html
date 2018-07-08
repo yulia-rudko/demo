@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/recipe-directions.css">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap-dist.css">
+	<title>Recipe-directions</title>
+<!--<link rel="stylesheet" href="fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css" />-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container logo-nav">
+			<div class="row">
+				<div class="col-lg-3 col-md-12 header-logo-img">
+					<img src="images/logo-white.png">
+				</div>
+				<div class="col-lg-9 col-md-12 header-nav">
+					<nav class="header-nav-menu">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Recipes</a></li>
+							<li><a href="#">Chefs</a></li>
+							<li><a href="#">Videos</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contacts</a></li>
+							<li><a href="#"><i class="fas fa-align-justify"></i></a></li>
+							<li><a href="#"><i class="fas fa-search"></i></a></li>
+							<li><a href="#"><i class="fas fa-user"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="hamburger hamburger--squeeze ">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+				<script>
+
+					var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+
+					var hamburgers = document.querySelectorAll(".hamburger");
+					if (hamburgers.length > 0) {
+						forEach(hamburgers, function(hamburger) {
+							hamburger.addEventListener("click", function() {
+          //  jQvery(this).parent().toggle("is-active");
+          this.parentElement.classList.toggle("is-active");
+        }, false);
+						});
+					}
+				</script>
+		</div>
+	</header>
+	<main>
+		<article class="search">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2 col-lg-6 col-md-12 button-browse-left button-box">
+						<button class="button-browse">Browse All <i class="fas fa-angle-right"></i></button>
+					</div>
+					<div class="col-xl-2 col-lg-6 col-md-12 col-sm-12 button-browse-right button-box">
+						<button class="button-browse">Ingredients <i class="fas fa-angle-right"></i></button>
+					</div>
+					<div class="col-xl-5 col-lg-12 button-box">
+						<button class="button-search">Search<i class="fas fa-search"></i></button>
+					</div>
+					<div class="col-xl-3 col-lg-12 search-name button-box">
+						<p>Anas Barakat</p><span></span>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="demonstrative">
+			<div class="recipe">
+				<div class="recipe-content">
+					<div class="recipe-quantity">
+						<h1>Salisbury Steak with Mushroom</h1>
+						<div class="recipe-quantity-content">
+							<div><i class="far fa-calendar-alt"></i><span>4 Person</span></div>
+							<div><i class="far fa-lemon"></i><span>12 Ingredients</span></div>
+							<div><i class="far fa-clock"></i><span>55 Min</span></div>
+							<div><i class="far fa-paper-plane"></i><span>Easy</span></div>
+						</div>
+					</div>
+					<div class="recipe-rating">
+						<div class="recipe-rating-stars">
+							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+						</div>
+						<div class="recipe-rating-account">
+							<p>420 made it</p>
+							<p>|</p>
+							<p>985 reviews</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="canvas">
+				<div class="canvas-block">
+					<h2>It is important to look at tradition and culture for inspiration. Look to the past to move forward. Go and spend time in the region. Go and spend time in the region.</h2>
+				</div>
+			</div>
+			<div class="reference">
+				<div class="reference-content">
+					<div class="reference-autor">
+						<p>By Malek Saber</p>
+						<p>|</p>
+						<p>12 May 2016</p>
+					</div>
+					<div class="reference-events">
+						<div><i class="far fa-save"></i><span>Save it</span></div>
+						<div><i class="fas fa-print"></i><span>Print it</span></div>
+						<div><i class="fas fa-share-alt"></i><span>Share it</span></div>
+						<div><i class="far fa-paper-plane"></i><span>Make it</span></div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-12 col-sm-12">
+						<ul class="nav nav-tabs nav-tabs-directory">
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Ingredients</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Directuins</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Reviews</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4">
+						<div class="section-caption-like section-caption-like-mobile-hide">
+							<div>
+								<h2>You might also like</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-8 col-lg-7 col-md-12 col-sm-12 section-document">
+						<ul>
+							<li><i class="fas fa-chevron-circle-down"></i><p>Lorem ipsum dolor sit amet, in vitae pellentesque posuere volutpat, amet libero. In et nulla scelerisque ultrices risus orci, ullamcorper porta, nullam blandit rutrum venenatis, nec mauris. In at id habitant rhoncus augue. </p></li>
+							<li><i class="far fa-circle"></i><p>Velit fusce, quam parturient imperdiet nullam, sed sed, metus faucibus tristique eleifend diam vel lectus, magna ipsum. Phasellus et vivamus, mauris per mi nascetur mi, venenatis laoreet massa ut aliquam neque. Soluta ut, consequat nullam urna eros ultricies. </p></li>
+							<li><i class="far fa-circle"></i><p>Velit fusce, quam parturient imperdiet nullam, sed sed, metus faucibus tristique eleifend diam vel lectus, magna ipsum. Phasellus et vivamus, mauris per mi nascetur mi, venenatis laoreet massa ut aliquam neque. Soluta ut, consequat nullam urna eros ultricies. </p></li>
+						</ul>
+					</div>
+					<div class="col-xl-4 col-lg-5 col-md-12 col-sm-12">
+						<div>
+							<div class="section-directory-caption-desktop-hide">
+								<h2>You might also like</h2>
+							</div>
+							<div class="section-directory">
+								<span></span>
+								<div>
+									<h3><u>P</u>errercorn roast beef</h3>
+									<p>See how to make juicy, pepper crusted try-tip roast beef.</p>
+								</div>
+							</div>
+							<div class="section-directory">
+								<span></span>
+								<div>
+									<h3><u>P</u>errercorn roast beef</h3>
+									<p>See how to make juicy, pepper crusted try-tip roast beef.</p>
+								</div>
+							</div>
+							<div class="section-directory">
+								<span></span>
+								<div>
+									<h3><u>P</u>errercorn roast beef</h3>
+									<p>See how to make juicy, pepper crusted try-tip roast beef.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="catalog">
+			<div class="catalog-recommended-row">
+				<div class="catalog-recommended">
+					<div class="catalog-recommended-box">
+						<h2>Recommended for you</h2>
+					</div>
+				</div>
+			</div>
+			<div class="catalog-recipe-slick">
+				<div class="catalog-recipe">
+					<div class="catalog-recipe-cook">
+						<p>12 May 2017</p>
+						<p>|</p>
+						<p>By TheChef</p>
+						<p>|</p>
+						<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+					</div>
+					<h2><strong><u>M</u>ushroom </strong>bolognese</h2>
+					<div class="catalog-recipe-cook">
+						<p>4 Person</p>
+						<p>|</p>
+						<p>8 Ingredients</p>
+						<p>|</p>
+						<p>60 Min</p>
+					</div>
+					<h3><u>R</u>ead more »</h3>
+				</div>
+				<div class="catalog-recipe">
+					<div class="catalog-recipe-cook">
+						<p>12 May 2017</p>
+						<p>|</p>
+						<p>By TheChef</p>
+						<p>|</p>
+						<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+					</div>
+					<h2><strong><u>M</u>ushroom </strong>bolognese</h2>
+					<div class="catalog-recipe-cook">
+						<p>4 Person</p>
+						<p>|</p>
+						<p>8 Ingredients</p>
+						<p>|</p>
+						<p>60 Min</p>
+					</div>
+					<h3><u>R</u>ead more »</h3>
+				</div>
+				<div class="catalog-recipe">
+					<div class="catalog-recipe-cook">
+						<p>12 May 2017</p>
+						<p>|</p>
+						<p>By TheChef</p>
+						<p>|</p>
+						<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+					</div>
+					<h2><strong><u>M</u>ushroom </strong>bolognese</h2>
+					<div class="catalog-recipe-cook">
+						<p>4 Person</p>
+						<p>|</p>
+						<p>8 Ingredients</p>
+						<p>|</p>
+						<p>60 Min</p>
+					</div>
+					<h3><u>R</u>ead more »</h3>
+				</div>
+				<div class="catalog-recipe">
+					<div class="catalog-recipe-cook">
+						<p>12 May 2017</p>
+						<p>|</p>
+						<p>By TheChef</p>
+						<p>|</p>
+						<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+					</div>
+					<h2><strong><u>M</u>ushroom </strong>bolognese</h2>
+					<div class="catalog-recipe-cook">
+						<p>4 Person</p>
+						<p>|</p>
+						<p>8 Ingredients</p>
+						<p>|</p>
+						<p>60 Min</p>
+					</div>
+					<h3><u>R</u>ead more »</h3>
+				</div>
+				<div class="catalog-recipe">
+					<div class="catalog-recipe-cook">
+						<p>12 May 2017</p>
+						<p>|</p>
+						<p>By TheChef</p>
+						<p>|</p>
+						<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+					</div>
+					<h2><strong><u>M</u>ushroom </strong>bolognese</h2>
+					<div class="catalog-recipe-cook">
+						<p>4 Person</p>
+						<p>|</p>
+						<p>8 Ingredients</p>
+						<p>|</p>
+						<p>60 Min</p>
+					</div>
+					<h3><u>R</u>ead more »</h3>
+				</div>
+				<div class="catalog-recipe">
+					<div class="catalog-recipe-cook">
+						<p>12 May 2017</p>
+						<p>|</p>
+						<p>By TheChef</p>
+						<p>|</p>
+						<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+					</div>
+					<h2><strong><u>M</u>ushroom </strong>bolognese</h2>
+					<div class="catalog-recipe-cook">
+						<p>4 Person</p>
+						<p>|</p>
+						<p>8 Ingredients</p>
+						<p>|</p>
+						<p>60 Min</p>
+					</div>
+					<h3><u>R</u>ead more »</h3>
+				</div>
+			</div>
+
+
+				<script>
+					$('.catalog-recipe-slick').slick({
+					infinite: true,
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					prevArrow: '<i class="fas fa-arrow-left slick-arrow-left"></i>',
+					nextArrow: '<i class="fas fa-arrow-right slick-arrow-right"></i>',
+					responsive: [
+				    {
+				      breakpoint: 1179,
+				      settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2,
+				      }
+				    },
+				    {
+				      breakpoint: 779,
+				      settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+				      }
+				    }
+				  ]
+				});
+				</script>
+
+
+			<div class="catalog-underline">
+			</div>
+		</article>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-8 col-sm-12">
+					<h2>Cook at home</h2>
+					<p>We are passionate about cooking and sharing what we are learn to help everyone cook with confidence. We test cookware and supermarket ingredients to find the best quality.</p>
+					<p class="footer-create">Create with <span><i class="fas fa-heart"></i></span> by design castle</p>
+					<p>©2017 CookAtHome. All right reserved.</p>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-12">
+					<h2>Links</h2>
+					<ul>
+						<li><a href="">About us</a></li>
+						<li><a href="">Privacy policy</a></li>
+						<li><a href="">Non-use policy</a></li>
+						<li><a href="">Media contact</a></li>
+						<li><a href="">email newsletter</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-12">
+					<h2>Services</h2>
+					<ul>
+						<li><a href="">Website FAQs</a></li>
+						<li><a href="">Magazine FAQs</a></li>
+						<li><a href="">Contact us</a></li>
+						<li><a href="">Bookstore</a></li>
+						<li><a href="">The feed</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-8 col-sm-12">
+					<h2>Social Media</h2>
+						<p>We are passionate about cooking and sharing what we learn to help everyone.</p>
+						<div class="footer-fab">
+							<i class="fab fa-google-plus-g"></i>
+							<i class="fab fa-facebook-f"></i>
+							<i class="fab fa-twitter"></i>
+							<i class="fab fa-linkedin-in"></i>
+							<i class="fab fa-internet-explorer"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
